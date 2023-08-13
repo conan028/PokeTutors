@@ -6,6 +6,10 @@ plugins {
     kotlin("jvm") version "1.8.0"
 }
 
+tasks.test {
+    useJUnitPlatform()
+    exclude("**/*IntegrationTest")
+}
 
 architectury {
     common("forge", "fabric")
@@ -16,6 +20,7 @@ loom {
 }
 
 dependencies {
+    testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
     minecraft("com.mojang:minecraft:${property("minecraft_version")}")
     // The following line declares the mojmap mappings, you may use other mappings as well
     mappings("net.fabricmc:yarn:1.19.2+build.4:v2")

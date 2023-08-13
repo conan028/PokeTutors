@@ -1,5 +1,3 @@
-import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
-
 plugins {
     id("dev.architectury.loom")
     id("architectury-plugin")
@@ -24,6 +22,7 @@ configurations.all {
 
 val shadowCommon = configurations.create("shadowCommon")
 dependencies {
+    testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
     minecraft("com.mojang:minecraft:${property("minecraft_version")}")
     mappings("net.fabricmc:yarn:1.19.2+build.4:v2")
     modImplementation("net.fabricmc:fabric-loader:${property("fabric_loader_version")}")
@@ -41,6 +40,8 @@ dependencies {
 
     modImplementation("com.cobblemon:fabric:1.3.1+1.19.2-SNAPSHOT") { isTransitive = false }
     shadowCommon(project(":common", configuration = "transformProductionFabric"))
+
+    implementation("mysql:mysql-connector-java:8.0.33")
 }
 
 tasks.processResources {
@@ -75,4 +76,8 @@ tasks {
         archiveVersion.set("${rootProject.version}")
     }
 
+    test {
+        useJUnitPlatform()
+        exclude("**/*IntegrationTest")
+    }
 }
