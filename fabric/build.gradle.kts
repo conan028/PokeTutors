@@ -51,6 +51,7 @@ tasks.processResources {
     }
 }
 
+
 tasks {
 
     jar {
@@ -59,11 +60,13 @@ tasks {
     }
 
     shadowJar {
-        exclude("architectury.common.json", "com/**/*")
+        exclude("architectury.common.json", "**/bert")
         archiveClassifier.set("dev-shadow")
         archiveBaseName.set("${project.rootProject.properties["archives_base_name"]}-${project.name}")
         configurations = listOf(shadowCommon)
+
     }
+
 
     remapJar {
         dependsOn(shadowJar)
