@@ -1,4 +1,4 @@
-package dev.holsw.kevin.tutors;
+package dev.holsw.kevin.tutors
 
 import com.cobblemon.mod.common.api.events.CobblemonEvents
 import com.cobblemon.mod.common.api.pokemon.stats.Stats
@@ -13,13 +13,13 @@ import java.sql.SQLException
 
 object PokemonCore {
     const val MOD_ID = "poketutors"
-    val LOGGER = LogManager.getLogger()
+    private val LOGGER = LogManager.getLogger()
 
-    val hostname = "localhost"
-    val port = "3306"
-    val username = "root"
-    val password = "pass"
-    val databaseName = "testServer"
+    private const val hostname = "localhost"
+    private const val port = "3306"
+    private const val username = "root"
+    private const val password = "pass"
+    private const val databaseName = "testServer"
 
 
     init {
