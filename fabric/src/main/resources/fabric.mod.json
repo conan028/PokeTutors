@@ -1,20 +1,23 @@
 {
   "schemaVersion": 1,
-  "id": "poketutor",
+  "id": "poketutors",
   "version": "${version}",
-
-  "name": "PokeTutors",
+  "name": "poketutors",
   "description": "",
   "authors": [],
   "contact": {},
-
-  "license": "All Rights Reserved",
+  "license": "MIT",
   "icon": "icon.png",
-
   "environment": "*",
-  "entrypoints": {},
+  "entrypoints": {
+    "main": [
+      {
+        "value": "dev.holsw.kevin.tutors.fabric.PokemonFabricCore"
+      }
+    ]
+  },
   "depends": {
-    "fabricloader": ">=0.14.14",
+    "fabricloader": ">=0.14.18",
     "minecraft": ">=1.19.2"
   }
 }
