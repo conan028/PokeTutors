@@ -1,4 +1,4 @@
-package dev.holsw.kevin.tutors;
+package dev.holsw.kevin.fidlemodmain;
 
 import org.junit.jupiter.api.Test;
 

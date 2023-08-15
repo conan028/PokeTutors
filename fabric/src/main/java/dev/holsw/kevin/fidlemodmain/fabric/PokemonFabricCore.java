@@ -1,8 +1,7 @@
-package dev.holsw.kevin.tutors.fabric;
+package dev.holsw.kevin.fidlemodmain.fabric;
 
-import dev.holsw.kevin.tutors.PokemonCore;
+import dev.holsw.kevin.fidlemodmain.PokemonCore;
 import net.fabricmc.api.ModInitializer;
-import dev.holsw.kevin.tutors.PokemonCore;
 
 public class PokemonFabricCore implements ModInitializer {
     @Override

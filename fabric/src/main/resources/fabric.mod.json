@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "id": "poketutors",
+  "id": "fidlemod",
   "version": "${version}",
-  "name": "poketutors",
+  "name": "fidlemod",
   "description": "",
   "authors": [],
   "contact": {},
@@ -12,7 +12,7 @@
   "entrypoints": {
     "main": [
       {
-        "value": "dev.holsw.kevin.tutors.fabric.PokemonFabricCore"
+        "value": "dev.holsw.kevin.fidlemodmain.fabric.PokemonFabricCore"
       }
     ]
   },

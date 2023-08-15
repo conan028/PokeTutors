@@ -1,8 +1,7 @@
-package dev.holsw.kevin.tutors.forge;
+package dev.holsw.kevin.fidlemodmain.forge;
 
 import dev.architectury.platform.forge.EventBuses;
-import dev.holsw.kevin.tutors.PokemonCore;
-import dev.holsw.kevin.tutors.PokemonCore;
+import dev.holsw.kevin.fidlemodmain.PokemonCore;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 

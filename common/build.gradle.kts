@@ -36,6 +36,8 @@ dependencies {
     implementation(kotlin("stdlib-jdk8"))
 
     implementation("mysql:mysql-connector-java:8.0.33")
+
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9")
 }
 
 repositories {
